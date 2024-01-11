@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "A starter for `shell` code.",
   "main": "index.sh",
-  "devDependencies": {},
   "scripts": {
-    "start": "sh ./index.sh"
+    "start": "read -p 'Shell (default) or Bash? [s/b] ' answer && if [ \"$answer\" = 'b' ]; then bash index.sh; else sh index.sh; fi"
   },
   "keywords": [
     "shell",
